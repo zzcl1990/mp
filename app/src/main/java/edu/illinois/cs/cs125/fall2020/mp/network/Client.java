@@ -90,7 +90,7 @@ public final class Client {
                         url,
                         response -> {
                             try {
-                                Rating rating = objectMapper.readValue(response, Rating.class);
+                                Rating rating = objectMapper.readValue(response.toString(), Rating.class);
                                 callbacks.yourRating(summary, rating);
                             } catch (JsonProcessingException e) {
                                 e.printStackTrace();
@@ -115,16 +115,18 @@ public final class Client {
                             callbacks.yourRating(summary, rating);
                         },
                         error -> Log.e(TAG, error.toString())) {
-                    @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                        Map<String, String> map = new HashMap<String, String>();
-                        map.put("rating", newRating.toString());
-                        return map;
-                    }
+//                    @Override
+//                    protected Map<String, String> getParams() throws AuthFailureError {
+//                        Map<String, String> map = new HashMap<String, String>();
+//                        map.put("rating", newRating.toString());
+//                        return map;
+//                    }
+
+
 
                     @Override
                     public byte[] getBody() throws AuthFailureError {
-                        return super.getBody();
+                        return newRating.toString().getBytes();
                     }
 
                     @Override

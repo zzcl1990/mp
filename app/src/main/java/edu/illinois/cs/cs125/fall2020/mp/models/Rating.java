@@ -9,13 +9,15 @@ public class Rating implements Serializable {
     private String id;
     private double rating;
 
+    /**
+     * Create an empty Rating.
+     */
+    @SuppressWarnings({"unused", "RedundantSuppression"})
+    public Rating() { }
+
     public Rating(final String setId, final double setRating) {
         this.id = setId;
         this.rating = setRating;
-    }
-
-    public Rating(String s, int i, int i1) {
-
     }
 
     public void setId(String id) {

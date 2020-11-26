@@ -57,33 +57,6 @@ public final class Server extends Dispatcher {
     return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(summary);
   }
 
-  private final Map<String, String> ratings = new HashMap<>();
-  private MockResponse getRating(@NonNull final String path) {
-    Map<String, String> query = queryForPath(path);
-
-    String rating = ratings.get(path);
-    if (rating == null) {
-      ObjectNode newRating = mapper.createObjectNode();
-      newRating.set("id", mapper.convertValue(query.get("client"), JsonNode.class));
-      newRating.set("rating", mapper.convertValue(Rating.NOT_RATED, JsonNode.class));
-      rating = newRating.toString();
-      //return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
-    }
-    return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(rating);
-  }
-
-  private Map<String, String> queryForPath(@NonNull final String path) {
-    String query = path.substring(path.indexOf("?") + 1);
-    String[] params = query.split("&");
-    Map<String, String> map = new HashMap<String, String>();
-    for (String param : params) {
-      String name = param.split("=")[0];
-      String value = param.split("=")[1];
-      map.put(name, value);
-    }
-    return map;
-  }
-
   private static final int PARAM_PARTS = 4;
   @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
   private final Map<Summary, String> courses = new HashMap<>();
@@ -132,22 +105,6 @@ public final class Server extends Dispatcher {
     } catch (Exception e) {
       return new MockResponse().setResponseCode(HttpURLConnection.HTTP_INTERNAL_ERROR);
     }
-  }
-
-  private MockResponse postRating(@NonNull final RecordedRequest request) {
-    // 参数校验
-    String urlPath = request.getPath().replaceFirst("/rating/", "");
-    Map<String, String> map = null;
-    try {
-
-      JSONObject object = new JSONObject(request.getBody().readUtf8());
-
-      map = mapper.readValue(request.getBody().toString(), new TypeReference<Map<String, String>>(){});
-    } catch (JsonProcessingException | JSONException e) {
-      e.printStackTrace();
-    }
-    ratings.put(request.getPath(), map.get("rating"));
-    return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK);
   }
 
   private static boolean started = false;
@@ -212,4 +169,54 @@ public final class Server extends Dispatcher {
       throw new IllegalStateException(e);
     }
   }
+
+  private final Map<String, String> ratings = new HashMap<>();
+  private MockResponse getRating(@NonNull final String path) {
+    Map<String, String> query = queryForPath(path);
+
+    String rating = ratings.get(path);
+    if (rating == null) {
+      ObjectNode newRating = mapper.createObjectNode();
+      newRating.set("id", mapper.convertValue(query.get("client"), JsonNode.class));
+      newRating.set("rating", mapper.convertValue(Rating.NOT_RATED, JsonNode.class));
+      rating = newRating.toString();
+      //return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
+    }
+    return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(rating);
+  }
+
+  private Map<String, String> queryForPath(@NonNull final String path) {
+    String query = path.substring(path.indexOf("?") + 1);
+    String[] params = query.split("&");
+    Map<String, String> map = new HashMap<String, String>();
+    for (String param : params) {
+      String name = param.split("=")[0];
+      String value = param.split("=")[1];
+      map.put(name, value);
+    }
+    return map;
+  }
+
+  private MockResponse postRating(@NonNull final RecordedRequest request) {
+    // 参数校验
+    String urlPath = request.getPath().replaceFirst("/rating/", "");
+    Map<String, String> map = null;
+    try {
+      String s = request.getBody().toString();
+      String[] parts = s.split("=");
+      map = mapper.readValue(parts[1], new TypeReference<Map<String, String>>(){});
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+    }
+
+    try {
+      String json = mapper.writeValueAsString(map);
+      ratings.put(urlPath, json);
+    } catch (JsonProcessingException e) {
+      e.printStackTrace();
+    }
+    return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK);
+  }
+
+
 }

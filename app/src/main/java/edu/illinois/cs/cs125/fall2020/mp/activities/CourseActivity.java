@@ -1,6 +1,7 @@
 package edu.illinois.cs.cs125.fall2020.mp.activities;
 
 import android.os.Bundle;
+import android.widget.RatingBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -17,14 +18,18 @@ import edu.illinois.cs.cs125.fall2020.mp.models.Rating;
 import edu.illinois.cs.cs125.fall2020.mp.models.Summary;
 import edu.illinois.cs.cs125.fall2020.mp.network.Client;
 
+
 /** CourseActivity activity showing the course detail. */
 public class CourseActivity extends AppCompatActivity
-        implements Client.CourseClientCallbacks {
+        implements Client.CourseClientCallbacks,
+        RatingBar.OnRatingBarChangeListener {
   // binding to the layout in activity_course.xml
   private ActivityCourseBinding binding;
 
   // mapper to handle properties
   private final ObjectMapper objectMapper = new ObjectMapper();
+
+  private Summary summary = null;
 
   /**
    * Called when this activity is created.
@@ -41,6 +46,10 @@ public class CourseActivity extends AppCompatActivity
     CourseableApplication application = (CourseableApplication) getApplication();
     String courseExtra = getIntent().getStringExtra("COURSE");
     binding = DataBindingUtil.setContentView(this, R.layout.activity_course);
+
+    binding.rating.setOnRatingBarChangeListener(this);
+    binding.rating.setRating((float) -1.0);
+
     ObjectNode node = null;
     try {
       node = (ObjectNode) objectMapper.readTree(courseExtra);
@@ -52,12 +61,12 @@ public class CourseActivity extends AppCompatActivity
     String department = node.get("department").asText();
     String number = node.get("number").asText();
     Summary summary = new Summary(year, semester, department, number, "title");
+
+    this.summary = summary;
     application.getCourseClient().getCourse(summary, this);
 
+    // mp2
     application.getCourseClient().getRating(summary, application.getClientID(), this);
-
-    // ceshi
-    application.getCourseClient().postRating(summary, new Rating("1111", 3), this);
   }
 
   /**
@@ -72,9 +81,19 @@ public class CourseActivity extends AppCompatActivity
     binding.textView.setText(course.getDescription());
   }
 
+  // mp2
   @Override
   public void yourRating(final Summary summary, final Rating rating) {
+    if (rating.getRating() != Rating.NOT_RATED) {
+      binding.rating.setRating(rating.getRating().floatValue());
+    }
+  }
 
+  @Override
+  public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+    // mp2
+    CourseableApplication application = (CourseableApplication) getApplication();
+    application.getCourseClient().postRating(summary, new Rating(application.getClientID(), rating), this);
   }
 }
 
