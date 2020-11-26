@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Courseable</string>
+    <string name="search_title">Search Courses</string>
+    <string name="search_courses">Search Courses</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="textview">TextView</string>
+</resources>

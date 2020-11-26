@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="listener"
+            type="edu.illinois.cs.cs125.fall2020.mp.adapters.CourseListAdapter.Listener" />
+
+        <variable
+            name="model"
+            type="edu.illinois.cs.cs125.fall2020.mp.models.Summary" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{view -> listener.onCourseClicked(model)}">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@{model.formatText}"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</layout>

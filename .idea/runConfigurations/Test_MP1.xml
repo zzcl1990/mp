@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Test MP1" type="AndroidJUnit" factoryName="Android JUnit">
+    <module name="Fall2020-MP.app" />
+    <useClassPathOnly />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="edu.illinois.cs.cs125.fall2020.mp.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="edu.illinois.cs.cs125.fall2020.mp" />
+    <option name="MAIN_CLASS_NAME" value="edu.illinois.cs.cs125.fall2020.mp.MP0Test" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="PARAMETERS" value="" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    <method v="2">
+      <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

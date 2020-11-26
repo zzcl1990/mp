@@ -1,0 +1,435 @@
+[ {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "410",
+  "title" : "Text Information Systems",
+  "description" : "Theory, design, and implementation of text-based information systems. Text analysis, retrieval models (e.g., Boolean, vector space, probabilistic), text categorization, text filtering, clustering, retrieval system design and implementation, and applications to web information management. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "125",
+  "title" : "Intro to Computer Science",
+  "description" : "Basic concepts in computing and fundamental techniques for solving computational problems. Intended as a first course for computer science majors and others with a deep interest in computing. Prerequisite: Three years of high school mathematics or MATH 112."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "466",
+  "title" : "Introduction to Bioinformatics",
+  "description" : "Algorithmic approaches in bioinformatics: (i) biological problems that can be solved computationally (e.g., discovering genes, and interactions among different genes and proteins); (ii) algorithmic techniques with wide applicability in solving these problems (e.g., dynamic programming and probabilistic methods); (iii) practical issues in translating the basic algorithmic ideas into accurate and efficient tools that biologists may use. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "563",
+  "title" : "Advanced Computer Security",
+  "description" : "Current research trends in computer and network security. Privacy, tamper-resistance, unwanted traffic, monitoring and surveillance, and critical infrastructure protection. Subtopics will vary depending upon current research trends. Students work in teams in close coordination with the course instructor to develop one of the topics in depth by carrying out background research and an exploratory project. Same as ECE 524. Prerequisite: CS 461 or CS 463."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "413",
+  "title" : "Intro to Combinatorics",
+  "description" : "Same as MATH 413. See MATH 413."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "241",
+  "title" : "System Programming",
+  "description" : "Basics of system programming, including POSIX processes, process control, inter-process communication, synchronization, signals, simple memory management, file I/O and directories, shell programming, socket network programming, RPC programming in distributed systems, basic security mechanisms, and standard tools for systems programming such as debugging tools. Credit is not given for both CS 241 and ECE 391. Prerequisite: CS 225 and CS 233."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "524",
+  "title" : "Concurrent Progrmg Languages",
+  "description" : "Theory of concurrency and concurrent programming languages. Formal models of concurrent computation such as process algebras, nets, and actors; high level concurrent programming languages and their operational semantics; methods for reasoning about correctness and complexity of concurrent programs. Prerequisite: CS 422; CS 475 or CS 476."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "498",
+  "title" : "Special Topics",
+  "description" : "Subject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "473",
+  "title" : "Algorithms",
+  "description" : "Design and analysis techniques, approximation algorithms, randomized algorithms and amortized analysis, and advanced topics such as network flow, linear programming, and dynamic data structures, among others. Same as CSE 414 and MATH 473. 4 undergraduate hours. 4 graduate hours. Prerequisite: CS 374, and one of CS 361, MATH 461, or STAT 400."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "439",
+  "title" : "Wireless Networks",
+  "description" : "Same as ECE 439. See ECE 439."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "361",
+  "title" : "Probability & Statistics for Computer Science",
+  "description" : "Introduction to probability theory and statistics with applications to computer science. Topics include: visualizing datasets, summarizing data, basic descriptive statistics, conditional probability, independence, Bayes theorem, random variables, joint and conditional distributions, expectation, variance and covariance, central limit theorem. Markov inequality, Chebyshev inequality, law of large numbers, Markov chains, simulation, the PageRank algorithm, populations and sampling, sample mean, standard error, maximum likelihood estimation, Bayes estimation, hypothesis testing, confidence intervals, linear regression, principal component analysis, classification, and decision trees. Same as STAT 361. Credit is not given for both CS 361 and ECE 313. Prerequisite: MATH 220 or MATH 221; credit or concurrent registration in one of MATH 225, MATH 415 or MATH 416. For majors only."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "242",
+  "title" : "Programming Studio",
+  "description" : "Intensive programming lab intended to strengthen skills in programming. Prerequisite: CS 241."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "591",
+  "title" : "Advanced Seminar",
+  "description" : "Seminar on topics of current interest as announced in the Class Schedule. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "527",
+  "title" : "Topics in Software Engineering",
+  "description" : "Fault-tolerant software, software architecture, software patterns, multi-media software, and knowledge-based approaches to software engineering. Case studies. Prerequisite: CS 428 or CS 429."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "433",
+  "title" : "Computer System Organization",
+  "description" : "Computer hardware design and analysis and interface with software. Advanced processor design, including superscalar, out-of-order issue, branch prediction, and speculation. Memory hierarchy design, including advanced cache optimizations, main memory, and virtual memory. Principles of multiprocessor design, including shared-memory, cache coherence, synchronization, and consistency. Other advanced topics depending on time; e.g., GPUs and accelerators, warehouse computers and data centers, security. Same as CSE 422. 3 undergraduate hours. 4 graduate hours. Prerequisite: CS 233."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "440",
+  "title" : "Artificial Intelligence",
+  "description" : "Major topics in and directions of research in artificial intelligence: basic problem solving techniques, knowledge representation and computer inference, machine learning, natural language understanding, computer vision, robotics, and societal impacts. Same as ECE 448. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "425",
+  "title" : "Distributed Systems",
+  "description" : "Protocols, specification techniques, global states and their determination, reliable broadcast, transactions and commitment, security, and real-time systems. Same as ECE 428. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "105",
+  "title" : "Intro Computing: Non-Tech",
+  "description" : "Computing as an essential tool of academic and professional activities. Functions and interrelationships of computer system components: hardware, systems and applications software, and networks. Widely used application packages such as spreadsheets and databases. Concepts and practice of programming for the solution of simple problems in different application areas. Intended for non-science and non-engineering majors. Prerequisite: MATH 112."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "499",
+  "title" : "Senior Thesis",
+  "description" : "Research and thesis development experience in computer science underguidance of a faculty member. Literature search, oral presentation, analysis and implementation, paper preparation, and completion of a written thesis. 3 undergraduate hours. No graduate credit. May be repeated to a maximum of 6 hours. Prerequisite: Consent of instructor."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "240",
+  "title" : "Introduction to Computer Systems",
+  "description" : "Basics of computer systems. Number representations, assembly/machine language, abstract models of processors (fetch/execute, memory hierarchy), processes/process control, simple memory management, file I/O and directories, network programming, usage of cloud services. Prerequisite: CS 225 or both CS 205 and CS 110C++."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "450",
+  "title" : "Numerical Analysis",
+  "description" : "Linear system solvers, optimization techniques, interpolation and approximation of functions, solving systems of nonlinear equations, eigenvalue problems, least squares, and quadrature; numerical handling of ordinary and partial differential equations. Same as CSE 401, ECE 491, and MATH 450. 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both CS 450 and CS 457. Prerequisite: CS 101 or CS 125; CS 357 or MATH 415; MATH 285."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "497",
+  "title" : "CS Team Project",
+  "description" : "Student teams work with CS faculty to complete a significant project requiring advanced knowledge of CS principles. Project topics vary. 1 to 3 undergraduate hours. No graduate credit. May be repeated in the same term up to 6 hours, if topics vary; may be repeated in separate terms. Prerequisite: For majors only; junior or senior standing required."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "481",
+  "title" : "Advanced Topics in Stochastic Processes & Applications",
+  "description" : "Same as IE 410. See IE 410."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "225",
+  "title" : "Data Structures",
+  "description" : "Data abstractions: elementary data structures (lists, stacks, queues, and trees) and their implementation using an object-oriented programming language. Solutions to a variety of computational problems such as search on graphs and trees. Elementary analysis of algorithms. Prerequisite: CS 125 or ECE 220; One of CS 173, MATH 213, MATH 347, MATH 412 or MATH 413."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "424",
+  "title" : "Real-Time Systems",
+  "description" : "Supervisory control aspects of Cyber Physical Systems (CPS): fundamentals of reliability analysis, real-time scheduling, simple feedback control, software fault tolerance architecture, wireless networking and energy saving, principles of safety critical system engineering. Student groups design and demonstrate supervisory control architecture for a robot. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "426",
+  "title" : "Compiler Construction",
+  "description" : "Compiler structure, syntax analysis, syntax-directed translation, automatically constructed recognizers, semantic analysis, code generation, intermediate language, optimization techniques. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 421."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "523",
+  "title" : "Advanced Operating Systems",
+  "description" : "Advanced concepts in operating system design and coverage of recent research directions. Resource management for parallel and distributed systems. Interaction between operating system design and computer architectures. Process management, virtual memory, interprocess communication, context switching, parallel and distributed file system designs, persistent objects, process and data migration, load balancing, security, protection. Term projects. Prerequisite: CS 423, CS 425, and CS 433."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "581",
+  "title" : "Algorithmic Genomic Biology",
+  "description" : "The purpose of the course is to give each student enough background and training in the area of algorithmic genomic biology so that each will be able to do research in this area, and publish papers. The main focus of the course is phylogeny (evolutionary tree) estimation, multiple sequence alignment, and genome-scale phylogenetics, which are problems that present very interesting challenges from a computational and statistical standpoint. Time permitting, we will also discuss computational problems in microbiome analysis, protein function and structure prediction, genome assembly, and even historical linguistics. Students will learn the mathematical and computational foundations in these areas, read the current literature, and do a team research project. The course is designed for doctoral students in computer science, computer engineering, bioengineering, mathematics, and statistics, and does not depend on any prior background in biology. The technical material will depend on discrete algorithms, graph theory, simulations, and probabilistic analysis of algorithms. 4 graduate hours. No professional credit. Prerequisite: CS 374 and CS 361/STAT 361, or consent of instructor."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "397",
+  "title" : "Individual Study",
+  "description" : "May be repeated. Prerequisite: Consent of instructor."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "447",
+  "title" : "Natural Language Processing",
+  "description" : "Part-of-speech tagging, parsing, semantic analysis and machine translation. Relevant linguistics concepts from morphology (word formation) and lexical semantics (the meaning of words) to syntax (sentence structure) and compositional semantics (the meaning of sentences). 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both CS 447 and LING 406. Prerequisite: CS 374."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "491",
+  "title" : "Seminar",
+  "description" : "Seminar on topics of current interest as announced in the Class Schedule. 0 to 4 undergraduate hours. 0 to 4 graduate hours. Approved for S/U grading only. May be repeated in the same or separate terms if topics vary to a maximum of 4 hours. Prerequisite: As specified for each topic offering, see Class Schedule or departmental course description."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "173",
+  "title" : "Discrete Structures",
+  "description" : "Discrete mathematical structures frequently encountered in the study of Computer Science. Sets, propositions, Boolean algebra, induction, recursion, relations, functions, and graphs. Credit is not given for both CS 173 and MATH 213. Prerequisite: One of CS 125, ECE 220; one of MATH 220, MATH 221."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "549",
+  "title" : "Seminar in Cognitive Science",
+  "description" : "Same as PSYC 514, ANTH 514, EPSY 551, LING 570, and PHIL 514. See PSYC 514."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "556",
+  "title" : "Iterative & Multigrid Methods",
+  "description" : "Comprehensive treatment of algebraic and multigrid iterative methods to solve systems of equations, primarily linear equations arising from discretization of partial differential equations. Same as CSE 511."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "427",
+  "title" : "Software Engineering I",
+  "description" : "Software process, analysis and design. Software development paradigms, system engineering, function-based analysis and design, and object-oriented analysis and design. Course will use team-projects for hands-on exercises. Same as CSE 426. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225 and CS 373."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "412",
+  "title" : "Introduction to Data Mining",
+  "description" : "Concepts, techniques, and systems of data warehousing and data mining. Design and implementation of data warehouse and on-line analytical processing (OLAP) systems; data mining concepts, methods, systems, implementations, and applications. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "519",
+  "title" : "Scientific Visualization",
+  "description" : "Visualization techniques useful in analysis of engineering and scientific data. Physical models; methods of computational science; two- and three-dimensional data types; visual representation schemes for scalar, vector, and tensor data; isosurface and volume visualization methods; visual monitoring; interactive steering. Same as CSE 527. Prerequisite: CS 418."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "107",
+  "title" : "Data Science Discovery",
+  "description" : "Same as IS 107 and STAT 107. See STAT 107."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "597",
+  "title" : "Individual Study",
+  "description" : "Individual study or reading in a subject not covered in normal course offerings. May be repeated. Prerequisite: Consent of instructor."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "210",
+  "title" : "Ethical & Professional Issues",
+  "description" : "Ethics for the computing profession. Ethical decision-making; licensing; intellectual property, freedom of information, and privacy. Credit is not given for both CS 210 and ECE 316. Prerequisite: CS 225. Junior standing required."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "296",
+  "title" : "Honors Course",
+  "description" : "Group projects for honors credit in computer science. Sections of this course are offered in conjunction with other 200-level computer science courses taken concurrently. A special examination may be required for admission to this course. May be repeated. Prerequisite: Concurrent registration in another 200-level computer science course (see Schedule)."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "233",
+  "title" : "Computer Architecture",
+  "description" : "Fundamentals of computer architecture: digital logic design, working up from the logic gate level to understand the function of a simple computer; machine-level programming to understand implementation of high-level languages; performance models of modern computer architectures to enable performance optimization of software; hardware primitives for parallelism and security. Prerequisite: CS 125 and CS 173; credit or concurrent enrollment in CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "438",
+  "title" : "Communication Networks",
+  "description" : "Layered architectures and the OSI Reference Model; design issues and protocols in the transport, network, and data link layers; architectures and control algorithms of local-area, point-to-point, and satellite networks; standards in networks access protocols; models of network interconnection; overview of networking and communication software. Same as ECE 438. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 241 or ECE 391; one of ECE 313, MATH 461, MATH 463."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "265",
+  "title" : "Innovation Illinois: From Accessible Design to Supercomputing Cultures",
+  "description" : "Same as IS 265 and MACS 265. See MACS 265."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "445",
+  "title" : "Computational Photography",
+  "description" : "Computer vision techniques to enhance, manipulate, and create media from photo collections, such as panoramic stitching, face morphing, texture synthesis, blending, and 3D reconstruction. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225, MATH 225, and MATH 231."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "421",
+  "title" : "Programming Languages & Compilers",
+  "description" : "Structure of programming languages and their implementation. Basic language design principles; abstract data types; functional languages; type systems; object-oriented languages. Basics of lexing, parsing, syntax-directed translation, semantic analysis, and code generation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 233 or CS 240; CS 374; one of MATH 225, MATH 415, MATH 416, ASRM 406."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "465",
+  "title" : "User Interface Design",
+  "description" : "A project-focused course covering fundamental principles of user interface design, implementation, and evaluation. Small teams work on a term-long project that involves: analysis of the problem domain, user skills, and tasks; iterative prototyping of interfaces to address user needs; conducting several forms of evaluation such as cognitive walkthroughs and usability tests; implementation of the final prototype. Non-technical majors may enroll as non-programmers who participate in all aspects of the projects with the possible exception of implementation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "126",
+  "title" : "Software Design Studio",
+  "description" : "Fundamental principles and techniques of software development. Design, documentation, testing, and debugging software, with a significant emphasis on code review. Credit is not given for both CS 242 and CS 126. Prerequisite: CS 125. For majors only."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "461",
+  "title" : "Computer Security I",
+  "description" : "Fundamental principles of computer and communications security and information assurance: ethics, privacy, notions of threat, vulnerabilities, and risk in systems, information warfare, malicious software, data secrecy and integrity issues, network security, trusted computing, mandatory and discretionary access controls, certification and accreditation of systems against security standards. Security mechanisms: authentication, auditing, intrusion detection, access control, cryptography, security protocols, key distribution. Same as ECE 422. 4 undergraduate hours. 4 graduate hours. Prerequisite: CS 241 or ECE 391."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "411",
+  "title" : "Database Systems",
+  "description" : "Examination of the logical organization of databases: the entity-relationship model; the hierarchical, network, and relational data models and their languages. Functional dependencies and normal forms. Design, implementation, and optimization of query languages; security and integrity; concurrency control, and distributed database systems. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "572",
+  "title" : "Extremal Graph Theory",
+  "description" : "Same as MATH 581. See MATH 581."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "598",
+  "title" : "Special Topics",
+  "description" : "Subject offerings of new and developing areas of knowledge in computer science intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "196",
+  "title" : "Freshman Honors",
+  "description" : "Offered for honors credit in conjunction with other 100-level computer science courses taken concurrently. A special examination may be required for admission to this course. May be repeated. Prerequisite: Concurrent registration in another 100-level computer science course (see Schedule)."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "446",
+  "title" : "Machine Learning",
+  "description" : "Principles and applications of machine learning. Main paradigms and techniques, including discriminative and generative methods, reinforcement learning: linear regression, logistic regression, support vector machines, deep nets, structured methods, dimensionality reduction, k-means, Gaussian mixtures, expectation maximization, Markov decision processes, and Q-learning. Application areas such as natural language and text understanding, speech recognition, computer vision, data mining, and adaptive computer systems, among others. Same as ECE 449. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; One of MATH 225, MATH 415, MATH 416 or ASRM 406; One of CS 361, ECE 313, MATH 461 or STAT 400."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "100",
+  "title" : "Freshman Orientation",
+  "description" : "Introduction to Computer Science as a field and career for computer science majors. Overview of the field and specific examples of problem areas and methods of solution."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "483",
+  "title" : "Applied Parallel Programming",
+  "description" : "Same as CSE 408 and ECE 408. See ECE 408."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "199",
+  "title" : "Undergraduate Open Seminar in Computer Science",
+  "description" : "Topics vary. Approved for Letter and S/U grading. May be repeated."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "492",
+  "title" : "Senior Project I",
+  "description" : "First part of a project course in computer science. Students work in teams to solve typical commercial or industrial problems. Work involves planning, design, and implementation. Extensive oral and written work is required both on-campus and possibly off-campus at sponsors' locations. CS 492 must be taken as a sequence with either CS 493 or CS 494. 3 undergraduate hours. No graduate credit. Credit is not given for both CS 492 and a project course in another engineering department for the same project. Prerequisite: For Computer Science majors with senior standing."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "357",
+  "title" : "Numerical Methods I",
+  "description" : "Fundamentals of numerical methods for students in science and engineering; floating-point computation, systems of linear equations, approximation of functions and integrals, the single nonlinear equation, and the numerical solution of ordinary differential equations; various applications in science and engineering; programming exercises and use of high quality mathematical library routines. Same as MATH 357. Credit is not given for CS 357 if credit for CS 450 has been earned. (Counts for advanced hours in LAS). Prerequisite: One of CS 101, CS 105 or CS 125; MATH 241; one of MATH 225, MATH 415, MATH 416 or ASRM 406."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "374",
+  "title" : "Introduction to Algorithms & Models of Computation",
+  "description" : "Analysis of algorithms, major paradigms of algorithm design including recursive algorithms, divide-and-conquer algorithms, dynamic programming, greedy algorithms, and graph algorithms. Formal models of computation including finite automata and Turing machines. Limitations of computation arising from fundamental notions of algorithm and from complexity-theoretic constraints. Reductions, undecidability and NP-completeness. Same as ECE 374. Prerequisite: One of CS 173, MATH 213; CS 225."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "418",
+  "title" : "Interactive Computer Graphics",
+  "description" : "Basic mathematical tools and computational techniques for modeling, rendering, and animating 3-D scenes. Same as CSE 427. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 225; MATH 225 or MATH 415; MATH 241."
+}, {
+  "year" : "2020",
+  "semester" : "fall",
+  "department" : "CS",
+  "number" : "101",
+  "title" : "Intro Computing: Engrg & Sci",
+  "description" : "Fundamental principles, concepts, and methods of computing, with emphasis on applications in the physical sciences and engineering. Basic problem solving and programming techniques; fundamental algorithms and data structures; use of computers in solving engineering and scientific problems. Intended for engineering and science majors. Prerequisite: MATH 220 or MATH 221."
+} ]
