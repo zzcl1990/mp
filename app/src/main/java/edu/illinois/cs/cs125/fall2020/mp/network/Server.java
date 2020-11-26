@@ -172,7 +172,28 @@ public final class Server extends Dispatcher {
 
   private final Map<String, String> ratings = new HashMap<>();
   private MockResponse getRating(@NonNull final String path) {
+    // 参数校验
     Map<String, String> query = queryForPath(path);
+
+    if (!query.containsKey("client")) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
+    }
+
+    if (!query.get("client").matches("[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}")) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
+    }
+
+    String summaryPath = path.substring(0, path.indexOf("?"));
+    String[] part = summaryPath.split("/");
+    if (part.length != PARAM_PARTS) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
+    }
+
+    Summary summary = new Summary(part[0], part[1], part[2], part[3], "title");
+    String course = courses.get(summary);
+    if (course == null) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
+    }
 
     String rating = ratings.get(path);
     if (rating == null) {
@@ -180,15 +201,18 @@ public final class Server extends Dispatcher {
       newRating.set("id", mapper.convertValue(query.get("client"), JsonNode.class));
       newRating.set("rating", mapper.convertValue(Rating.NOT_RATED, JsonNode.class));
       rating = newRating.toString();
-      //return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
     }
     return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(rating);
   }
 
   private Map<String, String> queryForPath(@NonNull final String path) {
-    String query = path.substring(path.indexOf("?") + 1);
-    String[] params = query.split("&");
     Map<String, String> map = new HashMap<String, String>();
+    int queryIndex = path.indexOf("?");
+    if (queryIndex == -1) {
+      return map;
+    }
+    String query = path.substring(queryIndex + 1);
+    String[] params = query.split("&");
     for (String param : params) {
       String name = param.split("=")[0];
       String value = param.split("=")[1];
@@ -200,6 +224,28 @@ public final class Server extends Dispatcher {
   private MockResponse postRating(@NonNull final RecordedRequest request) {
     // 参数校验
     String urlPath = request.getPath().replaceFirst("/rating/", "");
+
+    Map<String, String> query = queryForPath(urlPath);
+    if (!query.containsKey("client")) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
+    }
+
+    if (!query.get("client").matches("[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}")) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
+    }
+
+    String summaryPath = urlPath.substring(0, urlPath.indexOf("?"));
+    String[] part = summaryPath.split("/");
+    if (part.length != PARAM_PARTS) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
+    }
+
+    Summary summary = new Summary(part[0], part[1], part[2], part[3], "title");
+    String course = courses.get(summary);
+    if (course == null) {
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
+    }
+
     Map<String, String> map = null;
     try {
       String s = request.getBody().toString();
@@ -207,16 +253,24 @@ public final class Server extends Dispatcher {
       map = mapper.readValue(parts[1], new TypeReference<Map<String, String>>(){});
     } catch (JsonProcessingException e) {
       e.printStackTrace();
+      return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
     }
-
+    String json = null;
     try {
-      String json = mapper.writeValueAsString(map);
+      json = mapper.writeValueAsString(map);
+      if (!map.get("id").matches("[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}")) {
+        return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
+      }
+
+      if (!map.get("id").equals(query.get("client"))) {
+        return new MockResponse().setResponseCode(HttpURLConnection.HTTP_BAD_REQUEST);
+      }
+
       ratings.put(urlPath, json);
     } catch (JsonProcessingException e) {
       e.printStackTrace();
     }
-    return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK);
+    return new MockResponse().setResponseCode(HttpURLConnection.HTTP_OK).setBody(json);
   }
-
 
 }

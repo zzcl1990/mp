@@ -115,15 +115,6 @@ public final class Client {
                             callbacks.yourRating(summary, rating);
                         },
                         error -> Log.e(TAG, error.toString())) {
-//                    @Override
-//                    protected Map<String, String> getParams() throws AuthFailureError {
-//                        Map<String, String> map = new HashMap<String, String>();
-//                        map.put("rating", newRating.toString());
-//                        return map;
-//                    }
-
-
-
                     @Override
                     public byte[] getBody() throws AuthFailureError {
                         return newRating.toString().getBytes();
